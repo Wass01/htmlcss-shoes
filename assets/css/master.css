@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class^="col-"]{
+  float: left;
+}
+
+.col-red{
+  width: 100%;
+  height: 100vh;
+  background-color: #ff0000;
+}
+
+.col-green{
+  width: 100%;
+  height: 100vh;
+  background-color: #08ad00;
+}
+
+.col-yellow{
+  width: 100%;
+  height: 100vh;
+  background-color: #f6ff00;
+}
+
+.img-shoes{
+  position: relative;
+}
+
+.img-shoes > img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.img-shoes > p{
+   text-transform: uppercase;
+   font-size: 2em;
+}
