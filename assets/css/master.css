@@ -10,36 +10,49 @@
   display: table;
 }
 
+
 [class^="col-"]{
   float: left;
+}
+
+.right{
+  float: right;
+}
+
+li{
+  float: left;
+  list-style: none;
+  position: relative;
 }
 
 .col-red{
   width: 100%;
   height: 100vh;
   background-color: #ff0000;
+  color: #f6ff00;
 }
 
 .col-green{
   width: 100%;
   height: 100vh;
   background-color: #08ad00;
+  color: #f6ff00;
 }
 
 .col-yellow{
   width: 100%;
   height: 100vh;
   background-color: #f6ff00;
+  color: #08ad00;
 }
 
-.nav{
-  height: 0px;
+a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 60px;
   position: fixed;
-  top: 0;
-  right: 0;
   z-index: 1;
 }
-
 
 .img-shoes{
   position: relative;
@@ -55,4 +68,8 @@
 .img-shoes > p{
    text-transform: uppercase;
    font-size: 2em;
+   position: absolute;
+   width: 100%;
+   top: 50%;
+   text-align: center;
 }
